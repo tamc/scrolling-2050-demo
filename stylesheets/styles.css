@@ -22,6 +22,57 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* Choice styles */
+a.choiceLink {
+  color: black;
+  display: block;
+  float: left;
+  width: 142px;
+  height: 141px;
+  padding: 4px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: solid 1px #ccc;
+}
+
+a.choiceLink:nth-child(4) {
+  margin-right: 0px;
+}
+
+a.choiceLink.selected {
+  border: solid 1px #000;
+  background-color: grey;
+}
+
+div.choices {
+  overflow: auto;
+}
+
+#classic_controls {
+  display: none;
+}
+
+/* Results bar */
+div#bar {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
 
 /* Base text styles */
 
